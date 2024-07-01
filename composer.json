@@ -1,0 +1,32 @@
+{
+    "name": "basetime/a2w-api-php",
+    "description": "Client library that communicates with the addtowallet API.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Basetime\\A2w\\": "src/"
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "8.2"
+        }
+    },
+    "authors": [
+        {
+            "name": "Avagate"
+        }
+    ],
+    "scripts": {
+        "test": "phpunit tests"
+    },
+    "require": {
+        "psr/log": "^3.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11",
+        "symfony/var-dumper": "^7.1"
+    }
+}
