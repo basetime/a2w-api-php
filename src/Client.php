@@ -5,6 +5,8 @@ namespace Basetime\A2w;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 use GuzzleHttp\ClientInterface;
+use Basetime\A2w\Endpoint\CampaignsEndpoint;
+use Basetime\A2w\Endpoint\ClaimsEndpoint;
 
 /**
  * Client class that communicates with the the addtowallet API.

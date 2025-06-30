@@ -1,6 +1,6 @@
 <?php
 
-namespace Basetime\A2w;
+namespace Basetime\A2w\Endpoint;
 
 /**
  * Communicate with the claims endpoints.

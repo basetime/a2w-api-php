@@ -1,6 +1,8 @@
 <?php
 
-namespace Basetime\A2w;
+namespace Basetime\A2w\Endpoint;
+
+use Basetime\A2w\RequesterInterface;
 
 /**
  * Parent class for other endpoints.
