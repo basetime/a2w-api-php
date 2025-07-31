@@ -39,6 +39,20 @@ class CampaignsEndpoint extends Endpoint
     }
 
     /**
+     * Appends a log to a pass.
+     *
+     * @param string $campaignId The ID of the campaign.
+     * @param string $passId The ID of the pass.
+     * @param string $log The log.
+     */
+    public function appendLog(string $campaignId, string $passId, string $log)
+    {
+        $url = $this->getUrl($campaignId . '/passes/' . $passId . '/logs');
+
+        return $this->requester->fetch('POST', $url, ['log' => $log]);
+    }
+
+    /**
      * Returns the redeemed status of a pass.
      *
      * @param string $campaignId The ID of the campaign.
